@@ -73,3 +73,12 @@ footer {
     text-align: center;
     height: 150px;
 }
+
+.course-title {
+    display: block;
+}
+
+header nav ul {
+    display: flex;
+    
+}
