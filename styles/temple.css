@@ -1,0 +1,103 @@
+/*defining variables to store color*/
+:root {
+    ---primary-color: rgb(121, 30, 30);
+    ---sceondary-color: rgb(168, 168, 76);
+    ---tertiary-color: rgb(14, 14, 37);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Small view (mostly smart phone and tablets*/
+
+header, footer{
+    background-color: var(---sceondary-color);
+    text-align: center;
+    color: black; 
+    font-size: 1.2rem;
+}
+
+
+header p {
+    font-family: "Google Sans", sans-serif;
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+   
+}
+
+#menu {
+    position: absolute;
+    font-size: 2rem;
+    background: none;
+    top: 0.5rem;
+    right:1rem;
+    color: white;
+    border: none;
+}
+
+#menu::before{
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+ul {
+    display: none;
+    width: 200px;
+    height: 300px;
+    /* padding: 20px; */
+    background-color: var(---primary-color);
+    position: absolute;
+    right: 0;
+    top: 3.75rem;
+    
+}
+
+.navigation li {
+    padding-top: 7px;
+    list-style: none;
+}
+.navigation a {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.navigation li:hover {
+    background-color: var(---tertiary-color);
+}
+
+ul.open{
+    display: grid;
+}
+
+main {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.temples {
+    display: grid;
+    row-gap: 10px;
+}
+
+figure img {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+figcaption {
+    font-size: 1.5rem;
+    text-align: center;
+}
