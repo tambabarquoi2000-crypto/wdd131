@@ -1,8 +1,8 @@
 /*defining variables to store color*/
 :root {
-    ---primary-color: rgb(121, 30, 30);
-    ---sceondary-color: rgb(168, 168, 76);
-    ---tertiary-color: rgb(14, 14, 37);
+    --primary-color: rgb(121, 30, 30);
+    --sceondary-color: rgb(168, 168, 76);
+    --tertiary-color: rgb(14, 14, 37);
 }
 
 
@@ -15,7 +15,7 @@
 /* Small view (mostly smart phone and tablets*/
 
 header, footer{
-    background-color: var(---sceondary-color);
+    background-color: var(--sceondary-color);
     text-align: center;
     color: black; 
     font-size: 1.2rem;
@@ -53,7 +53,7 @@ ul {
     width: 200px;
     height: 300px;
     /* padding: 20px; */
-    background-color: var(---primary-color);
+    background-color: var(--primary-color);
     position: absolute;
     right: 0;
     top: 3.75rem;
@@ -71,7 +71,7 @@ ul {
 }
 
 .navigation li:hover {
-    background-color: var(---tertiary-color);
+    background-color: var(--tertiary-color);
 }
 
 ul.open{
