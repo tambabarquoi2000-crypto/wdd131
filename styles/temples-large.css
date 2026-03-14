@@ -61,4 +61,7 @@
         background: none;
     }
     
+    nav {
+        display: flex;
+    }
 }
