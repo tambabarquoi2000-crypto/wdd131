@@ -1,0 +1,104 @@
+:root {
+    --primary-color: #add8e6;
+    --secondary-color: #e6add8;
+    --tertiary-color: #d8e6ad;
+    --line-spacing: 1.5;
+    --header-font-size: 2.5rem;
+    --body-font-size: 1.4rem;
+    --aside-font-size: 1.1rem;
+    --gutter: 1.5rem;
+    --standard-margin: 1rem;
+    --header-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --body-font: Georgia, 'Times New Roman', Times, serif;
+    
+
+
+}
+
+.html {
+    font-size: 62.5%;
+}
+
+
+*, *::before, *::after {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    height: 6rem;
+    background-color: var(--primary-color);
+    padding: var(--gutter)
+    
+}
+header h1 {
+    text-align: center;
+    font-size: var(--header-font-size);
+    font-family: var(--header-font);
+    
+}
+
+.hero {
+    margin: 0 auto;
+    
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.data, .weather {
+    width: 95%;
+    height: auto;
+    margin: var(--standard-margin) auto;
+    border-radius: 8px;
+    padding: var(--gutter)
+
+}
+
+.data h2, .weather h2 {
+    color: black;
+    text-align: center;
+    font-family: var(--header-font);
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+}
+
+svg {
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    
+}
+
+
+table {
+    margin: 0 auto;
+    font-family: var(--body-font);
+    font-size: var(--body-font-size);
+    border-collapse: collapse;
+}
+
+tr, td {
+    padding: 8px;
+}
+
+td:first-child {
+    text-align: right;
+}
+
+
+footer {
+    text-align: center;
+    font-family: var(--body-font);
+    font-size: var(--body-font-size);
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+
+
+
