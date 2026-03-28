@@ -111,7 +111,7 @@ function displayItems (temples){
         <p>Location: ${temple.location}</p>
         <p>Dedicated: ${temple.dedicated}</p>
         <p>Area: ${temple.area} Sq ft</p>
-        <img loading = "lazy" src="${temple.imageUrl}" alt="The temple of ${templeLocation}">
+        <img loading = "lazy" src="${temple.imageUrl}" alt="The temple of ${templeLocation}" width="500" height="250">
     </div>
     `
     }
@@ -129,7 +129,7 @@ document.querySelectorAll("nav a").forEach(
             const oldTemples = temples.filter(temple => parseInt(temple.dedicated.split(",")[0], 10) < 1900);
             const newTemples = temples.filter(temple => parseInt(temple.dedicated.split(",")[0], 10) > 2000);
             const largeTemples = temples.filter(temple => temple.area > 90000);
-            const smallTemples = temples.filter(temple => temple.area > 90000);
+            const smallTemples = temples.filter(temple => temple.area < 10000);
 
             const filter = link.textContent.toLowerCase();
             if (filter === "home") {
