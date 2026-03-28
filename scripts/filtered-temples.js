@@ -110,8 +110,8 @@ function displayItems (temples){
         <h2>${temple.templeName}</h2>
         <p>Location: ${temple.location}</p>
         <p>Dedicated: ${temple.dedicated}</p>
-        <p>Area: ${temple.area}</p>
-        <img loading = "lazy" src="${temple.imageUrl}" alt="The temple of ${templeLocation}" width="500" height="250">
+        <p>Area: ${temple.area} Sq ft</p>
+        <img loading = "lazy" src="${temple.imageUrl}" alt="The temple of ${templeLocation}">
     </div>
     `
     }

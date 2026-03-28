@@ -1,0 +1,67 @@
+@media screen  and (min-width: 650px) {
+    header{
+        display: grid;
+        grid-template-columns: auto 0.75fr;
+        align-items: center;
+        padding: 15px;
+        
+    }
+
+    header p {
+        color: black;
+        text-align: left;
+    }
+
+    .navigation {
+        width: 100%;
+        height: auto;
+        background: none;
+        position:static;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    .navigation a {
+        color: black;
+        font-size: 2rem;
+    }
+
+    main {
+        max-width: 1080px;
+        padding: 20px;
+
+    }
+
+    .temples {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        row-gap: 5px;
+        column-gap: 5px;
+    }
+
+    figure img {
+        width: 100%
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation li:hover {
+        background: none;
+    }
+    
+    nav {
+        display: flex;
+    }
+}
