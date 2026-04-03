@@ -12,7 +12,7 @@ section {
     margin-bottom: 1.6rem;
     font-size: 1.8rem;
     padding: 10px  10px 10px 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Lato", sans-serif;
 
 }
 
@@ -20,6 +20,8 @@ section {
 h1, h2, h3 {
     margin-bottom: 0.8rem;
     color: #0a1f44;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
 
 }
 
@@ -40,6 +42,7 @@ table {
 thead th {
     background-color: #0a1f44;
     border: 1px solid #0a1f44;
+    font-family: "Montserrat", sans-serif;
     color: white;
     
 }
