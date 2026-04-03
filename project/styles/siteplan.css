@@ -38,8 +38,8 @@ table {
 
 
 thead th {
-    background-color: black;
-    border: 1px solid black;
+    background-color: #0a1f44;
+    border: 1px solid #0a1f44;
     color: white;
     
 }
@@ -76,10 +76,13 @@ li {
     list-style: none
 }
 
-li:before {
+li::before {
     content: "*";
     margin-right: 10px;
     margin-left: 10px;
+    font-size: 1.8rem;
+    
+
 }
 
 .domain {
@@ -87,5 +90,6 @@ li:before {
     margin-top: 10px;
     padding: 15px;
     background-color: #d4af37;
+    margin-bottom: -15px;
 
 }
