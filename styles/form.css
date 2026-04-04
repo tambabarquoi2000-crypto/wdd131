@@ -15,10 +15,11 @@
 /* Small view (mostly smart phone and tablets*/
 
 header, footer{
-    background-color: var(--sceondary-color);
+    background-color: rgb(243, 243, 238);
     text-align: center;
     color: black; 
     font-size: 1.2rem;
+    padding: 1rem;
 }
 
 
@@ -36,7 +37,7 @@ header p {
     background: none;
     top: 0.5rem;
     right:1rem;
-    color: white;
+    color: black;
     border: none;
 }
 
