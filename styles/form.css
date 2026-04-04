@@ -1,0 +1,229 @@
+/*defining variables to store color*/
+:root {
+    --primary-color: rgb(121, 30, 30);
+    --sceondary-color: rgb(168, 168, 76);
+    --tertiary-color: rgb(40, 40, 131);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Small view (mostly smart phone and tablets*/
+
+header, footer{
+    background-color: var(--sceondary-color);
+    text-align: center;
+    color: black; 
+    font-size: 1.2rem;
+}
+
+
+header p {
+    font-family: "Google Sans", sans-serif;
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+   
+}
+
+#menu {
+    position: absolute;
+    font-size: 2rem;
+    background: none;
+    top: 0.5rem;
+    right:1rem;
+    color: white;
+    border: none;
+}
+
+#menu::before{
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+ul {
+    display: none;
+    width: 200px;
+    height: 300px;
+    /* padding: 20px; */
+    background-color: var(--primary-color);
+    position: absolute;
+    right: 0;
+    top: 3.75rem;
+    
+}
+
+.navigation li {
+    padding-top: 7px;
+    list-style: none;
+}
+.navigation a {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.navigation li:hover {
+    background-color: var(--tertiary-color);
+}
+
+ul.open{
+    display: grid;
+}
+
+main {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.temples {
+    display: grid;
+    row-gap: 10px;
+}
+
+figure img {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+figcaption {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.active::before{
+    content: "🌹"
+}
+
+#temple-cards div {
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+#temple-cards div img {
+    display: block;
+    width: 100%;
+}
+
+.review {
+    margin: 0 auto;
+    width: 100%;
+    background-color: rgb(243, 243, 238);
+    padding: 25px;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.review div {
+    margin-bottom: 1.5rem;
+}
+
+.review label {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 10px;
+
+}
+
+
+.review input[type="date"],
+.review select, .review input[type="text"], .wreview,
+.ratting input
+
+{
+    display: block;
+    width: 100%;
+    padding: .9rem;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: .9rem;
+    margin-top: 5px;
+    background-color: white;
+}
+
+
+.textarea {
+    height: 18%
+
+}
+
+.review input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    width: 96%;
+    height: 10%;
+    margin: 0 2% 0 2%;
+    font-size: 18px;
+    background-color: var(--tertiary-color);
+    color: white;
+    border: none;
+    box-shadow: -1px 2px 5px black;
+    
+}
+
+.ratting {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.ratting label {
+    font-size: .6rem;
+    text-align: center;
+    margin-bottom: -10px;
+
+}
+
+h1 {
+    background-color: var(--tertiary-color);
+    color: white;
+    padding: 20px;
+    margin-top: 15px;
+    border: 2px solid rgb(0 0 0 / 0.2);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+
+.checkbox label {
+    display: block;
+}
+.checkbox input
+{
+    /* appearance: none; */
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    margin-right: 5px;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+.checkbox input:checked {
+    background-color: var(--sceondary-color);
+}
+
+.ratting div input  {
+    transform: scale(1.5)
+}
+
+
+.highlight {
+    color: blue
+}
