@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review Form</title>
     <meta name="author" content="Tamba Barquoi">
-    <meta name="This is a review for that is going to get reviews from our users inorde to better the page.">
+    <meta name="description" content="This is a review for that is going to get reviews from our users inorde to better the page.">
 
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/form-large.css">
@@ -42,28 +42,28 @@
             <div>
                 <label>Product Name
                 <select id="products" name="selected-product" required>
-                    <option value="" selected hidden>Select a product</option>
+                    <option value="" selected disabled>Select a product</option>
                     
                 </select>
                 </label>
             </div>
 
             <div class="ratting">
-                <div><label>⭐<input type="radio" name="rating" id="rating" value="1" required></label></div>
-                <div><label>⭐⭐<input type="radio" name="rating" id="rating" value="2" required></label></div>
-                <div><label>⭐⭐⭐⭐<input type="radio" name="rating" id="rating" value="3" required></label></div>
-                <div><label>⭐⭐⭐⭐⭐<input type="radio" name="rating" id="rating" value="4" required></label></div>
-                <div><label>⭐⭐⭐⭐⭐⭐<input type="radio" name="rating" id="rating" value="5" required></label></div>
+                <div><label for="rating">⭐<input type="radio" name="rating" id="rating" value="1" required></label></div>
+                <div><label for="rating">⭐⭐<input type="radio" name="rating" id="rating" value="2" required></label></div>
+                <div><label for="rating">⭐⭐⭐⭐<input type="radio" name="rating" id="rating" value="3" required></label></div>
+                <div><label for="rating">⭐⭐⭐⭐⭐<input type="radio" name="rating" id="rating" value="4" required></label></div>
+                <div><label for="rating">⭐⭐⭐⭐⭐⭐<input type="radio" name="rating" id="rating" value="5" required></label></div>
             </div>
             <div>
                 <label>Date of Installation <input type="date" id="install-date" name="install-date" required></label>
             </div>
 
-            <div class="checkbox"">
-                <label><input type="checkbox" id="duri" name="duribility" value="yes"> Duribility</label>
-                <label><input type="checkbox" id="ease" name="ease-to-use" value="yes"> Easy to use</label>
-                <label><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
-                <label><input type="checkbox" id="dsg" name="design" value="yes"> Design</label>
+            <div class="checkbox">
+                <label for="duribility"><input type="checkbox" id="duribility" name="duribility" value="yes"> Duribility</label>
+                <label for="ease-to-use"><input type="checkbox" id="ease-to-use" name="ease-to-use" value="yes"> Easy to use</label>
+                <label for="performance"><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
+                <label for="design"><input type="checkbox" id="design" name="design" value="yes"> Design</label>
             </div>
             
             <div>
